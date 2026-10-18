@@ -27,6 +27,14 @@ Mesh head
 - **Velocity** from the center (head) peak.
 - **Position** (Phase 2) from the three peripheral peaks → radial + angle CCs.
 
+## Mechanical carrier (DIY 8″)
+
+PLA spider basket for an 8″ DIY shell (ID 185 mm): center TriFlex + 3 position piezos + jack on the spider.
+
+- Docs: [docs/CARRIER.md](docs/CARRIER.md)
+- STL: [`models/experimental/trisense-spider-diy8-s01.stl`](models/experimental/trisense-spider-diy8-s01.stl)
+- Preview: [`assets/spider-diy8-s01-preview.png`](assets/spider-diy8-s01-preview.png)
+
 ## Quick start (Phase 1)
 
 1. Build the protection circuit in [docs/SCHEMATIC.md](docs/SCHEMATIC.md).
