@@ -29,11 +29,13 @@ Mesh head
 
 ## Mechanical carrier (DIY 8″)
 
-PLA spider basket for an 8″ DIY shell (ID 185 mm): center TriFlex + 3 position piezos + jack on the spider.
+PLA **tapered L-seat bowl** (S03 form). Print kit **S05**: center **hub** + **3 flower petals** (M3 / peg / glue). Scales later via [`cad/sizes.toml`](cad/sizes.toml).
 
 - Docs: [docs/CARRIER.md](docs/CARRIER.md)
-- STL: [`models/experimental/trisense-spider-diy8-s01.stl`](models/experimental/trisense-spider-diy8-s01.stl)
-- Preview: [`assets/spider-diy8-s01-preview.png`](assets/spider-diy8-s01-preview.png)
+- Print: `trisense-bowl-diy8-s05-hub.stl` + `…-petal-{a,b,c}.stl`
+- Assembled: [`assets/spider-diy8-s05-assembled.png`](assets/spider-diy8-s05-assembled.png)
+- Assembly steps: [`assets/spider-diy8-s05-assembly.png`](assets/spider-diy8-s05-assembly.png)
+- Concept / monolith: [`s03-concept`](assets/spider-diy8-s03-concept.png) · [`s03.stl`](models/experimental/trisense-spider-diy8-s03.stl)
 
 ## Quick start (Phase 1)
 

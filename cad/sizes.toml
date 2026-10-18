@@ -1,0 +1,61 @@
+# TriSense bowl basket — standard shell sizes
+# Ratios locked from DIY 8″ S03 (physically designed). Measure your shell ID/OD before printing.
+# L flange sits on the shell rim under the mesh; skirt OD ≈ ID − clearance.
+
+[defaults]
+# From S03 DIY8 reference
+wall_t_mm = 3.5
+flange_t_mm = 4.0
+bowl_h_mm = 45.0
+center_stack_mm = 35.0   # TriFlex V30 + felt → mesh
+pos_stack_mm = 33.0
+n_l_tabs = 12            # scaled with circumference for larger shells
+gap_deg = 1.5            # narrow slots — less flex (was 4°)
+l_drop_mm = 22.5         # çentik to ~half wall height
+sectors = 3              # print as N wedges; larger shells may need more (see generator)
+bed_max_mm = 210.0       # auto-bump sector count if chord exceeds this
+join_screw_od_mm = 3.2   # M3 clearance
+join_boss_mm = 8.0
+
+# Ratio of feature size to shell_id (S03: id=185)
+[ratios]
+skirt_clearance_mm = 1.5          # skirt_od = id - this
+l_overhang_mm = 13.0              # l_od = id + this  (≈ rim seat width both sides)
+bottom_over_id = 0.811            # 150/185
+r_pos_over_id = 0.297             # 55/185
+
+# Catalog — starting points; override with measured id/od when you have them
+[[size]]
+name = "diy8"
+inch = 8
+shell_id_mm = 185.0
+shell_od_mm = 201.0
+# explicit S03 lock (overrides ratio-derived)
+l_od_mm = 198.0
+skirt_od_mm = 183.5
+bottom_od_mm = 150.0
+r_pos_mm = 55.0
+
+[[size]]
+name = "tom10"
+inch = 10
+shell_id_mm = 239.0
+shell_od_mm = 255.0
+
+[[size]]
+name = "tom12"
+inch = 12
+shell_id_mm = 289.0
+shell_od_mm = 305.0
+
+[[size]]
+name = "tom13"
+inch = 13
+shell_id_mm = 314.0
+shell_od_mm = 330.0
+
+[[size]]
+name = "tom14"
+inch = 14
+shell_id_mm = 340.0
+shell_od_mm = 356.0
