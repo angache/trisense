@@ -75,18 +75,14 @@ def box(sx: float, sy: float, sz: float, cx: float, cy: float, z0: float) -> mf.
 
 
 def arm_solid(phase: float) -> mf.Manifold:
-    """Rectangular arm from near hub to position pad, in XY, thickness PLATE_T."""
+    """Rectangular arm from near hub out to the foot radius (connected)."""
     # Arm along +X then rotate about Z by phase
     inner = HUB_OD_MM / 2 - 1.0
-    outer = R_POS_MM + POS_PAD_OD_MM / 2 - 1.0
+    outer = R_FOOT_MM + FOOT_OD_MM / 2 - 2.0
     length = outer - inner
     cx = inner + length / 2
     solid = box(length, ARM_WIDTH_MM, PLATE_T_MM, cx, 0.0, 0.0)
-    # rotate
-    angle = phase
-    c, s = np.cos(angle), np.sin(angle)
-    # manifold rotate expects degrees about axis
-    return solid.rotate([0.0, 0.0, np.degrees(angle)])
+    return solid.rotate([0.0, 0.0, np.degrees(phase)])
 
 
 def build() -> trimesh.Trimesh:

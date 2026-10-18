@@ -28,7 +28,7 @@ Rigid PLA spider that sits inside a DIY 8″ shell and holds:
 | Center hole OD | 12 |
 | Position pad OD | 28 |
 | Position piezo recess OD × depth | 22 × 0.6 |
-| Arm width | 28 |
+| Arm width | 28 (extends to R_foot so feet are connected) |
 | Foot OD × height | 14 × 4 |
 | Jack hole OD / flange | 10 / 16 at R=38 on +X |
 | Cable grooves | 3.5 × 1.5 underside |
@@ -59,4 +59,4 @@ Preview: [`assets/spider-diy8-s01-preview.png`](../assets/spider-diy8-s01-previe
 
 ## Status
 
-Generated experimental — not yet printed or fitted. Watertight mesh; bbox ≈ 141 × 162 × 7.5 mm (fits inside Ø185).
+Generated experimental — not yet printed or fitted. Single watertight solid; bbox ≈ 147 × 168 × 7.5 mm (fits inside Ø185).
